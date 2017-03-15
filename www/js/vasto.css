@@ -25,7 +25,6 @@ button,
         font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	line-height: 1.3;
-	font-family: sans-serif /*{global-font-family}*/;
 }
 legend,
 .ui-input-text input,
@@ -747,11 +746,13 @@ button[disabled],
 	outline-style: auto;
 }
 
-/**/
-* {text-shadow: none !important;}
-.centro {
-    padding-top: 10%;
+/* MIE MODIFICHE */
+
+* {
+    text-shadow: none !important;
+    font-weight: 400;
 }
+.centro {padding-top: 10%;}
 .btn-nobg {
     background-color: transparent !important;
     border-color: transparent !important;
@@ -762,7 +763,7 @@ button[disabled],
 .immagine {
     width: 100%;
     height: 180px;
-    background-image: url(../js/images/golfo5.jpg);
+    background-image: url(../js/images/golfo7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -774,8 +775,9 @@ button[disabled],
 .profilo {
     width: 100px;
     height: 100px;
-    background-image: url(../js/images/foto-profilo.jpg);
+    background-image: url(../js/images/vastostemma2.png);
     background-size: contain;
+    background-repeat: no-repeat;
     margin: 0 auto;
     border-radius: 100px !important;
     margin: 0 auto;
@@ -845,7 +847,11 @@ textarea.ui-input-text.ui-textinput-autogrow {
     color: #fff !important;
 }
 .ui-page-theme-a .ui-body-inherit {
-    background-color: #007bb6;  
+    background: #89f7fe; /* Old browsers */
+background: -moz-linear-gradient(45deg, #89f7fe 0%, #84a9ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #89f7fe 0%,#84a9ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #89f7fe 0%,#84a9ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89f7fe', endColorstr='#84a9ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
 }
 a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     border: none;
@@ -864,4 +870,16 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
 }
 .ui-btn-active {
     color: #fff !important;
+}
+/*.ui-block-a, .ui-block-b {
+    background-color: #fff;
+    border: 1px solid #3b5998;
+    box-sizing: border-box;
+}*/
+.contorno {
+    color:#fff;
+    text-shadow: -1px 0 #84a9ee, 0 1px #84a9ee, 1px 0 #84a9ee, 0 -1px #84a9ee !important;
+}
+.ui-panel-inner {
+   padding-top: 60px; 
 }
