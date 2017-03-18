@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esempio pagine dinamiche</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="js/libs/jquery-mobile/jquery.mobile.structure.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/libs/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="js/libs/jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
+        <script src="js/libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="home">
+            <div data-role="panel" id="panelHome">
+                <h5>Menù</h5>
+                <hr>
+                <ul data-role="listview">
+                    <li><a href="#lista">Lista</a></li>
+                </ul>
+            </div>
+            <div data-role="header" data-position="fixed">
+                <a href="#panelHome" data-icon="bars">Menu</a>
+                <h1>Pagine dinamiche</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Colonna di sinistra
+                        </div>
+                        <div class="col-sm-6">
+                            Colonna di destra
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+                &copy; 2017 Marco Buccione
+            </div>
+        </div>
+        
+        
+        <div data-role="page" id="lista">
+            <div data-role="header" data-position="fixed">
+                <a href="#" data-rel="back" data-icon="back">Indietro</a>
+                <h1>Lista</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" id="listaPagine">
+                    <li>Titolo 1</li>
+                    <li>Titolo 2</li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+                &copy; 2017 Marco Buccione
+            </div>
+        </div>
+    </body>
+</html>

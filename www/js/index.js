@@ -1,49 +1,37 @@
-$(function() {
-  $("#salvaImpostazioni").click(function(){
-      var username = $("#username").val();
-      var password = $("#password").val();
-      var email = $("#email").val();
-      window.localStorage.setItem("username", username);
-      window.localStorage.setItem("password", password);    // sono dati locali. quelli che ti rimangonono salvati in app fino a quando non cancelli i dati.
-      window.localStorage.setItem("email", email);
-  });
-  $("#cancellaImpostazioni").click(function() {
-      localStorage.clear();
-      $("#username").val("");
-      $("#password").val("");
-      $("#email").val("");
-  });
- 
-  // recupero i dati
-    var username = localStorage.getItem("username");
-    if(username != null) {
-        // richiamo il campo user
-        $("#username").val(username);
-    }
-    var password = localStorage.getItem("password");
-    if(password != null) {
-        $("#password").val(password);
-    }
-    var email = localStorage.getItem("email");
-    if(email != null) {
-        $("#email").val(email);
-    }
-});
-
-//--------- OPPURE ---------
-//$(function() {
-//    $("#salvaImpostazioni").click(function() {
-//        $(".imp").each(function() {
-//            var valore = $(this).val();
-//            localStorage.setItem($(this).attr("id"), valore);
-//    });
-//$("#cancellaImpostazioni").click(function() {
-//    localStorage.clear();
-//    $(".imp").val('');
-//});
-//$(".imp").each(function()) {
-//    var valore = localStorage.getItem($(this).attr('id'));
-//    if(valore !== null) {
-//        $(this).val(valore);
-//    }
-//});
+$(function(){
+$("#monumenti").on("pagecreate",function(){
+      $.ajax("https://vasto-58389.firebaseio.com/Monumenti.json")
+              .done(function(data){
+                  var lista = $("#lista-monumenti");
+                  lista.empty();
+                  $.map(data,function(riga,indice){
+                      
+                      
+                      var monumenti = riga.nome +  "";
+                      var descrizione = riga.descrizione + "";
+                         
+                      $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + monumenti +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                  });
+                  
+                  
+                  $(".monumenti").click(function(){
+                      var id = $(this).attr('data-id');
+                              
+                              $.ajax("https://vasto-58389.firebaseio.com/Monumenti.json")
+                                      .done(function(data){
+                                          $.map(data,function(riga,indice){
+                                              if(indice == id){
+                                                  $("#nomeContenuto").html(riga.nome);
+                                                  
+                                                  $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                              }
+                                          });
+                              });
+                      
+                  });
+              })
+                      .fail(function(){
+                          alert("Errore!");
+              });
+          });
+      });

@@ -750,13 +750,12 @@ button[disabled],
 
 * {
     text-shadow: none !important;
-    font-weight: 400;
 }
 .centro {padding-top: 10%;}
 .btn-nobg {
     background-color: transparent !important;
     border-color: transparent !important;
-    color: #000 !important;
+    color: #455A64 !important;
     text-shadow: none !important;
     box-shadow: none !important;
 }
@@ -775,7 +774,7 @@ button[disabled],
 .profilo {
     width: 100px;
     height: 100px;
-    background-image: url(../js/images/vastostemma2.png);
+    background-image: url(../js/images/vastostemma10.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -847,11 +846,12 @@ textarea.ui-input-text.ui-textinput-autogrow {
     color: #fff !important;
 }
 .ui-page-theme-a .ui-body-inherit {
-    background: #89f7fe; /* Old browsers */
-background: -moz-linear-gradient(45deg, #89f7fe 0%, #84a9ee 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, #89f7fe 0%,#84a9ee 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, #89f7fe 0%,#84a9ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89f7fe', endColorstr='#84a9ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    background-color: #455A64;
+/*    background: #89f7fe;  Old browsers 
+background: -moz-linear-gradient(45deg, #89f7fe 0%, #84a9ee 100%);  FF3.6-15 
+background: -webkit-linear-gradient(45deg, #89f7fe 0%,#84a9ee 100%);  Chrome10-25,Safari5.1-6 
+background: linear-gradient(45deg, #89f7fe 0%,#84a9ee 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89f7fe', endColorstr='#84a9ee',GradientType=1 );  IE6-9 fallback on horizontal gradient   */
 }
 a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     border: none;
@@ -878,8 +878,53 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
 }*/
 .contorno {
     color:#fff;
-    text-shadow: -1px 0 #84a9ee, 0 1px #84a9ee, 1px 0 #84a9ee, 0 -1px #84a9ee !important;
+    text-shadow: -1px 0 #455A64, 0 1px #455A64, 1px 0 #455A64, 0 -1px #455A64 !important;
 }
 .ui-panel-inner {
    padding-top: 60px; 
+}
+.ui-page-theme-a .ui-bar-inherit {
+    border: none !important;
+}
+.vocimenu {
+    background-color: transparent !important; 
+    font-weight: 300 !important; 
+    text-shadow:none !important; 
+    font-size: 1.2em;
+}
+.copy {
+    color: #9E9E9E !important;
+    font-size: 0.7em;
+    padding: 4% 20% !important;
+}
+.blocco-a, .blocco-b {
+    border-bottom: 1px solid rgba(69, 90, 100, 0.21);
+    padding: 15px;
+}
+.blocco-a { text-align: left;}
+.blocco-b { text-align: right;}
+.list-categ {
+    margin: 0 2% 4%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid rgba(69, 90, 100, 0.21);
+    box-sizing: border-box;
+}
+.thumb {
+    width: 130px;
+    height: 130px;
+    box-sizing: content-box;
+    float:left;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+.list-title {
+    color: #444444;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 7%;
+}
+.list-testo {
+    color: #aaa;
+    font-size: 0.8em;
+    font-weight: 300;
 }
