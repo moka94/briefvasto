@@ -10,7 +10,7 @@ $("#monumenti").on("pagecreate",function(){
                       var monumenti = riga.nome +  "";
                       var descrizione = riga.descrizione + "";
                          
-                      $(lista).append('<a class="monumenti" href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + monumenti +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                      $(lista).append('<a class="monumenti" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + monumenti +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                   });
                   
                   
@@ -48,7 +48,7 @@ $("#monumenti").on("pagecreate",function(){
                       var chiese = riga.nome +  "";
                       var descrizione = riga.descrizione + "";
                          
-                      $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + chiese +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                      $(lista).append('<a class="chiese" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + chiese +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                   });
           
           $(".chiese").click(function(){
@@ -83,7 +83,7 @@ $("#monumenti").on("pagecreate",function(){
                          var musei = riga.nome +  "";
                          var descrizione = riga.descrizione + "";
 
-                         $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + musei +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                         $(lista).append('<a class="musei" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + musei +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                      });
 
              $(".musei").click(function(){
@@ -118,7 +118,7 @@ $("#monumenti").on("pagecreate",function(){
                              var spiagge = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + spiagge +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="spiagge" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + spiagge +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".spiagge").click(function(){
@@ -153,7 +153,7 @@ $("#monumenti").on("pagecreate",function(){
                              var svago = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + svago +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="svago" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + svago +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".svago").click(function(){
@@ -188,7 +188,7 @@ $("#monumenti").on("pagecreate",function(){
                              var ristoranti = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + ristoranti +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="ristoranti" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + ristoranti +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".ristoranti").click(function(){
@@ -223,7 +223,7 @@ $("#monumenti").on("pagecreate",function(){
                              var hotel = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + hotel +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="hotel" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + hotel +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".hotel").click(function(){
@@ -248,7 +248,7 @@ $("#monumenti").on("pagecreate",function(){
                  });
                  
                   $("#itinerari").on("pagecreate",function(){
-             $.ajax("https://vasto-58389.firebaseio.com/Itineriari.json")
+             $.ajax("https://vasto-58389.firebaseio.com/Itinerari.json")
                      .done(function(data){
                          var lista = $("#lista-itinerari");
                          lista.empty();
@@ -258,7 +258,7 @@ $("#monumenti").on("pagecreate",function(){
                              var itinerari = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a href="#contenuto" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + itinerari +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="itinerari" href="#contenuto2" data-id="' + indice +'" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + itinerari +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".itinerari").click(function(){
@@ -268,9 +268,9 @@ $("#monumenti").on("pagecreate",function(){
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
                                                      if(indice == id){
-                                                         $("#nomeContenuto").html(riga.nome);
+                                                         $("#nomeContenuto2").html(riga.nome);
 
-                                                         $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                         $("#mappaContenuto2").attr("src", riga.mappa);
                                                      }
                                                  });
                                      });
@@ -292,10 +292,10 @@ $("#monumenti").on("pagecreate",function(){
                             data: json
                         })
                                 .done(function () {
-                                    alert("Tutto ok!");
+                                    alert("Il messaggio è stato inviato!");
                                 })
                                 .fail(function () {
-                                    alert("Errore!");
+                                    alert("Errore! Messaggio non inviato");
                                 });
                     });
                 });

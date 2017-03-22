@@ -198,7 +198,7 @@
         <div data-role="page" id="mezzi">
             <div data-role="header" data-position="fixed" style="background-color: #00BCD4; color: #FFF;">
                 <a href="#" class="ui-btn fa fa-chevron-left fa-3x btn-nobg" style="color: #fff !important; font-size: 1.1em; position: absolute; top: 1%;" data-rel="back"></a>
-                <h1>MEZZI</h1>
+                <h1>MEZZI</h1><
             </div>
             <div data-role="main" class="ui-content">
                 <div id="lista-mezzi"></div>
@@ -266,14 +266,54 @@
                 <h1>ITINERARI</h1>
             </div>
             <div data-role="main" class="ui-content">
-                <div class="contenuto">
-                        
-                    <h1 id="nomeContenuto">cccc</h1>
-                    
-                </div>
+                
+                <div id="lista-itinerari"></div>
+            
+            
            
         </div>
         </div>
+        
+        <!-- SINGOLO ITINERARIO -->
+        <div data-role="page" id="contenuto2">
+            <div data-role="header" data-position="fixed" style="background-color: #00BCD4; color: #FFF;">
+                <a href="#" class="ui-btn fa fa-chevron-left fa-3x btn-nobg" style="color: #fff !important; font-size: 1.1em; position: absolute; top: 1%;" data-rel="back"></a>
+                <h2 id="nomeContenuto2" style="margin:0 !important;"></h2>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div data-role="main">
+                <div class="contenuto" >
+                    <iframe id="mappaContenuto2" style="width: 100%; height: 300px; position: relative; margin-top:-47px; border: none;"></iframe>
+                    <div data-role="tabs" id="tabs">
+                            <div data-role="navbar">
+                                <ul style="border-bottom:1px solid rgba(0,0,0,0.12);">
+                                    <li style="border-right:1px solid rgba(0,0,0,0.12);"><a href="#one" data-ajax="false" class="btn-nobg"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></a></li>
+                                    <li style="border-right:1px solid rgba(0,0,0,0.12);"><a href="#two" data-ajax="false" class="btn-nobg"><i class="fa fa-bus fa-2x" aria-hidden="true"></i></a></li>
+                                    <li><a href="#two" data-ajax="false" class="btn-nobg"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i></a></li>
+                                </ul> 
+                            </div>
+                            <div id="one" class="ui-body-d ui-content">
+                                <p id="viaContenuto2" style="color:#aaa; text-align: center;"></p>
+                            </div>
+                            <div id="two">
+                                <ul data-role="listview" data-inset="true">
+                                    <li><a href="#">Acura</a></li>
+                                    <li><a href="#">Audi</a></li>
+                                    <li><a href="#">BMW</a></li>
+                                    <li><a href="#">Cadillac</a></li>
+                                    <li><a href="#">Ferrari</a></li>
+                                </ul>
+                              </div>
+                        </div> 
+                </div>
+                <div style="border-bottom:1px solid rgba(0,0,0,0.12);"></div>
+                    <div class="ui-content">
+                        <h3 style="padding: 0 15px; font-weight: 700; font-variant: small-caps; letter-spacing: 1px;">STORIA</h3>
+                        <p id="testoContenuto2" style="padding: 0 15px; text-align: justify;"></p>
+                    </div>
+                </div>
+        </div>
+        
         
         <!-- NUMERI UTILI-->
         <div data-role="page" id="contatti">
