@@ -911,6 +911,9 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
 .ui-btn-active {
         color: #00BCD4 !important;
     }
+    .landscape {
+        display: none;
+    }
 @media screen and (max-width: 320px) {
     .list-title {
         margin-top: 5%;
@@ -935,10 +938,24 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     }
 }
 @media screen and (min-width: 1024px) {
+    .portrait {
+        display:none;
+    }
     .immacontenuto { 
-        height: 650px;
+/*        height: 50%;*/
+        width: 60%;
+        float: left;
     }
     .list-title {
         margin-top: 4%;
+    }
+    .landscape {
+        display: inline-block;
+        float:left;
+        width: 40%;
+        height: 500px;
+    }
+    .ui-content-p {
+        clear:both;
     }
 }

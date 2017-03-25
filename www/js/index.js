@@ -27,6 +27,9 @@ $("#monumenti").on("pagecreate",function(){
                                                   $("#orarioContenuto").html(riga.orario);
                                                   $("#testoContenuto").html(riga.testo);
                                                   $("#immagineContenuto").attr("src", riga.immagine);
+                                                  $("#orario_lContenuto").html(riga.orario_l);
+                                                  $("#mezzi_lContenuto").html(riga.mezzi_l);
+                                                  $("#via_lContenuto").html(riga.via_l);
                                               }
                                           });
                               });
@@ -66,6 +69,9 @@ $("#monumenti").on("pagecreate",function(){
                                                   $("#orarioContenuto").html(riga.orario);
                                                   $("#testoContenuto").html(riga.testo);
                                                   $("#immagineContenuto").attr("src", riga.immagine);
+                                                  $("#orario_lContenuto").html(riga.orario_l);
+                                                  $("#mezzi_lContenuto").html(riga.mezzi_l);
+                                                  $("#via_lContenuto").html(riga.via_l);
                                               }
                                           });
                               });
@@ -104,6 +110,9 @@ $("#monumenti").on("pagecreate",function(){
                                                   $("#orarioContenuto").html(riga.orario);
                                                   $("#testoContenuto").html(riga.testo);
                                                   $("#immagineContenuto").attr("src", riga.immagine);
+                                                  $("#orario_lContenuto").html(riga.orario_l);
+                                                  $("#mezzi_lContenuto").html(riga.mezzi_l);
+                                                  $("#via_lContenuto").html(riga.via_l);
                                                  }
                                              });
                                  });
@@ -142,6 +151,9 @@ $("#monumenti").on("pagecreate",function(){
                                                         $("#orarioContenuto").html(riga.orario);
                                                         $("#testoContenuto").html(riga.testo);
                                                         $("#immagineContenuto").attr("src", riga.immagine);
+                                                        $("#orario_lContenuto").html(riga.orario_l);
+                                                        $("#mezzi_lContenuto").html(riga.mezzi_l);
+                                                        $("#via_lContenuto").html(riga.via_l);
                                                      }
                                                  });
                                      });
@@ -180,6 +192,9 @@ $("#monumenti").on("pagecreate",function(){
                                                          $("#orarioContenuto").html(riga.orario);
                                                          $("#testoContenuto").html(riga.testo);
                                                          $("#immagineContenuto").attr("src", riga.immagine);
+                                                         $("#orario_lContenuto").html(riga.orario_l);
+                                                         $("#mezzi_lContenuto").html(riga.mezzi_l);
+                                                         $("#via_lContenuto").html(riga.via_l);
                                                      }
                                                  });
                                      });
@@ -218,6 +233,9 @@ $("#monumenti").on("pagecreate",function(){
                                                          $("#orarioContenuto3").html(riga.orario);
                                                          $("#testoContenuto3").html(riga.testo);
                                                          $("#immagineContenuto3").attr("src", riga.immagine);
+                                                         $("#orario_lContenuto3").html(riga.orario_l);
+                                                         $("#tel_lContenuto3").html(riga.tel_l);
+                                                         $("#via_lContenuto3").html(riga.via_l);
                                                      }
                                                  });
                                      });
@@ -256,6 +274,9 @@ $("#monumenti").on("pagecreate",function(){
                                                          $("#orarioContenuto4").html(riga.orario);
                                                          $("#testoContenuto4").html(riga.testo);
                                                          $("#immagineContenuto4").attr("src", riga.immagine);
+                                                         $("#orario_lContenuto4").html(riga.orario_l);
+                                                         $("#tel_lContenuto4").html(riga.tel_l);
+                                                         $("#via_lContenuto4").html(riga.via_l);
                                                      }
                                                  });
                                      });
