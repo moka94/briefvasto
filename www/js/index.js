@@ -23,8 +23,10 @@ $("#monumenti").on("pagecreate",function(){
                                               if(indice == id){
                                                   $("#nomeContenuto").html(riga.nome);
                                                   $("#viaContenuto").html(riga.via);
+                                                  $("#mezziContenuto").html(riga.mezzi);
+                                                  $("#orarioContenuto").html(riga.orario);
                                                   $("#testoContenuto").html(riga.testo);
-                                                  $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                  $("#immagineContenuto").attr("src", riga.immagine);
                                               }
                                           });
                               });
@@ -59,7 +61,10 @@ $("#monumenti").on("pagecreate",function(){
                                           $.map(data,function(riga,indice){
                                               if(indice == id){
                                                   $("#nomeContenuto").html(riga.nome);
-                                                  
+                                                  $("#viaContenuto").html(riga.via);
+                                                  $("#mezziContenuto").html(riga.mezzi);
+                                                  $("#orarioContenuto").html(riga.orario);
+                                                  $("#testoContenuto").html(riga.testo);
                                                   $("#anteprimaContenuto").attr("src", riga.anteprima);
                                               }
                                           });
@@ -93,9 +98,12 @@ $("#monumenti").on("pagecreate",function(){
                                          .done(function(data){
                                              $.map(data,function(riga,indice){
                                                  if(indice == id){
-                                                     $("#nomeContenuto").html(riga.nome);
-
-                                                     $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                  $("#nomeContenuto").html(riga.nome);
+                                                  $("#viaContenuto").html(riga.via);
+                                                  $("#mezziContenuto").html(riga.mezzi);
+                                                  $("#orarioContenuto").html(riga.orario);
+                                                  $("#testoContenuto").html(riga.testo);
+                                                  $("#anteprimaContenuto").attr("src", riga.anteprima);
                                                  }
                                              });
                                  });
@@ -128,9 +136,12 @@ $("#monumenti").on("pagecreate",function(){
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
                                                      if(indice == id){
-                                                         $("#nomeContenuto").html(riga.nome);
-
-                                                         $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                        $("#nomeContenuto").html(riga.nome);
+                                                        $("#viaContenuto").html(riga.via);
+                                                        $("#mezziContenuto").html(riga.mezzi);
+                                                        $("#orarioContenuto").html(riga.orario);
+                                                        $("#testoContenuto").html(riga.testo);
+                                                        $("#anteprimaContenuto").attr("src", riga.anteprima);
                                                      }
                                                  });
                                      });
@@ -164,7 +175,10 @@ $("#monumenti").on("pagecreate",function(){
                                                  $.map(data,function(riga,indice){
                                                      if(indice == id){
                                                          $("#nomeContenuto").html(riga.nome);
-
+                                                         $("#viaContenuto").html(riga.via);
+                                                         $("#mezziContenuto").html(riga.mezzi);
+                                                         $("#orarioContenuto").html(riga.orario);
+                                                         $("#testoContenuto").html(riga.testo);
                                                          $("#anteprimaContenuto").attr("src", riga.anteprima);
                                                      }
                                                  });
@@ -188,7 +202,7 @@ $("#monumenti").on("pagecreate",function(){
                              var ristoranti = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a class="ristoranti" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + ristoranti +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="ristoranti" href="#contenuto3" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + ristoranti +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".ristoranti").click(function(){
@@ -198,9 +212,12 @@ $("#monumenti").on("pagecreate",function(){
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
                                                      if(indice == id){
-                                                         $("#nomeContenuto").html(riga.nome);
-
-                                                         $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                         $("#nomeContenuto3").html(riga.nome);
+                                                         $("#viaContenuto3").html(riga.via);
+                                                         $("#telContenuto3").html(riga.tel);
+                                                         $("#orarioContenuto3").html(riga.orario);
+                                                         $("#testoContenuto3").html(riga.testo);
+                                                         $("#anteprimaContenuto3").attr("src", riga.anteprima);
                                                      }
                                                  });
                                      });
@@ -223,7 +240,7 @@ $("#monumenti").on("pagecreate",function(){
                              var hotel = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a class="hotel" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + hotel +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="hotel" href="#contenuto4" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + hotel +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".hotel").click(function(){
@@ -233,9 +250,12 @@ $("#monumenti").on("pagecreate",function(){
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
                                                      if(indice == id){
-                                                         $("#nomeContenuto").html(riga.nome);
-
-                                                         $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                         $("#nomeContenuto4").html(riga.nome);
+                                                         $("#viaContenuto4").html(riga.via);
+                                                         $("#telContenuto4").html(riga.tel);
+                                                         $("#orarioContenuto4").html(riga.orario);
+                                                         $("#testoContenuto4").html(riga.testo);
+                                                         $("#anteprimaContenuto4").attr("src", riga.anteprima);
                                                      }
                                                  });
                                      });
@@ -269,10 +289,13 @@ $("#monumenti").on("pagecreate",function(){
                                                  $.map(data,function(riga,indice){
                                                      if(indice == id){
                                                          $("#nomeContenuto2").html(riga.nome);
-
                                                          $("#mappaContenuto2").attr("src", riga.mappa);
+                                                         $("#testoContenuto2").html(riga.testo);
+                                                         $("#viaContenuto2").html(riga.via);
+                                                         $("#orarioContenuto2").html(riga.orario);
                                                      }
                                                  });
+                 });
                                      });
 
                          });
@@ -281,6 +304,7 @@ $("#monumenti").on("pagecreate",function(){
                                  alert("Errore!");
                      });
                  });
+                 
                  
                  $(function () {
                     $("#inserisciMessaggio").submit(function (event) {
@@ -299,6 +323,3 @@ $("#monumenti").on("pagecreate",function(){
                                 });
                     });
                 });
-
-
-});
