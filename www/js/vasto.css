@@ -919,6 +919,30 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
         margin-top: 5%;
     }
 }
+@media screen and (min-width: 480px) {
+    .portrait {
+        display:none;
+    }
+    .immacontenuto { 
+        width: 60%;
+        float: left;
+    }
+    .list-title {
+        margin-top: 4%;
+    }
+    .landscape {
+        display: inline-block;
+        float:left;
+        width: 40%;
+        font-size: small;
+    }
+    .ui-content-p {
+        clear:both;
+    }
+    .ui-content-l {
+        padding: 0 2em 0 2em;
+    }
+}
 @media screen and (min-width: 768px) {
     .ui-content {
         padding: 3em;
@@ -936,13 +960,15 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
         width: 100%; 
         height: 500px;
     }
+    .ui-content-l {
+        padding: 1em 2em 0 2em;
+    }
 }
 @media screen and (min-width: 1024px) {
     .portrait {
         display:none;
     }
     .immacontenuto { 
-/*        height: 50%;*/
         width: 60%;
         float: left;
     }
@@ -957,5 +983,8 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     }
     .ui-content-p {
         clear:both;
+    }
+    .ui-content-l {
+        padding: 1em 2em 0 2em;
     }
 }
