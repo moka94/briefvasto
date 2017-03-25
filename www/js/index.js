@@ -65,7 +65,7 @@ $("#monumenti").on("pagecreate",function(){
                                                   $("#mezziContenuto").html(riga.mezzi);
                                                   $("#orarioContenuto").html(riga.orario);
                                                   $("#testoContenuto").html(riga.testo);
-                                                  $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                  $("#immagineContenuto").attr("src", riga.immagine);
                                               }
                                           });
                               });
@@ -103,7 +103,7 @@ $("#monumenti").on("pagecreate",function(){
                                                   $("#mezziContenuto").html(riga.mezzi);
                                                   $("#orarioContenuto").html(riga.orario);
                                                   $("#testoContenuto").html(riga.testo);
-                                                  $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                  $("#immagineContenuto").attr("src", riga.immagine);
                                                  }
                                              });
                                  });
@@ -141,7 +141,7 @@ $("#monumenti").on("pagecreate",function(){
                                                         $("#mezziContenuto").html(riga.mezzi);
                                                         $("#orarioContenuto").html(riga.orario);
                                                         $("#testoContenuto").html(riga.testo);
-                                                        $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                        $("#immagineContenuto").attr("src", riga.immagine);
                                                      }
                                                  });
                                      });
@@ -179,7 +179,7 @@ $("#monumenti").on("pagecreate",function(){
                                                          $("#mezziContenuto").html(riga.mezzi);
                                                          $("#orarioContenuto").html(riga.orario);
                                                          $("#testoContenuto").html(riga.testo);
-                                                         $("#anteprimaContenuto").attr("src", riga.anteprima);
+                                                         $("#immagineContenuto").attr("src", riga.immagine);
                                                      }
                                                  });
                                      });
@@ -217,7 +217,7 @@ $("#monumenti").on("pagecreate",function(){
                                                          $("#telContenuto3").html(riga.tel);
                                                          $("#orarioContenuto3").html(riga.orario);
                                                          $("#testoContenuto3").html(riga.testo);
-                                                         $("#anteprimaContenuto3").attr("src", riga.anteprima);
+                                                         $("#immagineContenuto3").attr("src", riga.immagine);
                                                      }
                                                  });
                                      });
@@ -255,7 +255,7 @@ $("#monumenti").on("pagecreate",function(){
                                                          $("#telContenuto4").html(riga.tel);
                                                          $("#orarioContenuto4").html(riga.orario);
                                                          $("#testoContenuto4").html(riga.testo);
-                                                         $("#anteprimaContenuto4").attr("src", riga.anteprima);
+                                                         $("#immagineContenuto4").attr("src", riga.immagine);
                                                      }
                                                  });
                                      });
