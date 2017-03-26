@@ -136,25 +136,25 @@ $("#monumenti").on("pagecreate",function(){
                              var spiagge = riga.nome +  "";
                              var descrizione = riga.descrizione + "";
 
-                             $(lista).append('<a class="spiagge" href="#contenuto" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + spiagge +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
+                             $(lista).append('<a class="spiagge" href="#contenuto5" data-id="' + indice +'" data-transition="slide" style="text-decoration:none;"><div class="ui-grid-b list-categ"><img src="'+riga.anteprima+'" id="anteprima" class="thumb"/><h3 class="list-title">' + spiagge +'</h3><p class="list-testo">'+ descrizione +'</p></div></a>');
                          });
 
                  $(".spiagge").click(function(){
                              var id = $(this).attr('data-id');
-                                    $("#immagineContenuto").attr("src", "js/images/rolling.gif");
+                                    $("#immagineContenuto5").attr("src", "js/images/rolling.gif");
                                      $.ajax("https://vasto-58389.firebaseio.com/Spiagge.json")
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
                                                      if(indice == id){
-                                                        $("#nomeContenuto").html(riga.nome);
-                                                        $("#viaContenuto").html(riga.via);
-                                                        $("#mezziContenuto").html(riga.mezzi);
-                                                        $("#orarioContenuto").html(riga.orario);
-                                                        $("#testoContenuto").html(riga.testo);
-                                                        $("#immagineContenuto").attr("src", riga.immagine);
-                                                        $("#orario_lContenuto").html(riga.orario_l);
-                                                        $("#mezzi_lContenuto").html(riga.mezzi_l);
-                                                        $("#via_lContenuto").html(riga.via_l);
+                                                        $("#nomeContenuto5").html(riga.nome);
+                                                        $("#viaContenuto5").html(riga.via);
+                                                        $("#mezziContenuto5").html(riga.mezzi);
+                                                        $("#orarioContenuto5").html(riga.orario);
+                                                        $("#testoContenuto5").html(riga.testo);
+                                                        $("#immagineContenuto5").attr("src", riga.immagine);
+                                                        $("#orario_lContenuto5").html(riga.orario_l);
+                                                        $("#mezzi_lContenuto5").html(riga.mezzi_l);
+                                                        $("#via_lContenuto5").html(riga.via_l);
                                                      }
                                                  });
                                      });
