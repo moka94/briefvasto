@@ -781,15 +781,22 @@ button[disabled],
     position: relative;
     top: -55px;
 }
-.cit {
-    background-image: url(../js/images/cit2.png);
+.bandiera1 {
+    background-image: url(../js/images/bandierablu.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 81%;
-    height: 50px;
-    position: relative;
-    top: -60px;
-    margin: 0 auto;
+    width: 36%;
+    height: 70px;
+    float: left;
+    margin-left: 14%;
+}
+.bandiera2 {
+    background-image: url(../js/images/Logo-CT.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36%;
+    height: 70px;
+    float: left;
 }
 .social-icons {
     text-align: center;
@@ -951,13 +958,24 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     .list-testo {
         font-size: 1em;
     }
+    .bandiera1 {
+        margin-left: 23%;
+        height: 70px;
+    }
+    .bandiera2 {
+        height: 70px;
+    }
 }
 @media screen and (min-width: 768px) {
     .ui-content {
         padding: 3em;
     }
-    .cit {
-        width: 43%;
+    .bandiera1 {
+        margin-left: 22%;
+        height: 70px;
+    }
+    .bandiera2 {
+        height: 70px;
     }
     .list-title {
         margin-top: 5%;
@@ -1012,5 +1030,12 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     }
     .list-testo {
         font-size: 1em;
+    }
+    .bandiera1 {
+        margin-left: 25%;
+        height: 70px;
+    }
+    .bandiera2 {
+        height: 70px;
     }
 }
