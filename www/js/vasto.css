@@ -923,24 +923,33 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     .portrait {
         display:none;
     }
-    .immacontenuto { 
-        width: 60%;
-        float: left;
-    }
-    .list-title {
-        margin-top: 4%;
-    }
     .landscape {
         display: inline-block;
         float:left;
         width: 40%;
+        height: 320px;
         font-size: small;
+    }
+    .immacontenuto { 
+        width: 60%;
+        float: left;
     }
     .ui-content-p {
         clear:both;
     }
     .ui-content-l {
         padding: 0 2em 0 2em;
+    }
+    .list-title {
+        margin-top: 4%;
+        font-size: 1.4em;
+    }
+    .thumb {
+    width: 160px;
+    height: 160px;
+    }
+    .list-testo {
+        font-size: 1em;
     }
 }
 @media screen and (min-width: 768px) {
@@ -952,28 +961,29 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
     }
     .list-title {
         margin-top: 5%;
+        font-size: 1.4em;
     }
     .mappa {
         height: 1100px;
-    }
-    .immacontenuto {
-        width: 100%; 
-        height: 500px;
-    }
-    .ui-content-l {
-        padding: 1em 2em 0 2em;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .portrait {
-        display:none;
     }
     .immacontenuto { 
         width: 60%;
         float: left;
     }
-    .list-title {
-        margin-top: 4%;
+    .ui-content-l {
+        padding: 1em 2em 0 2em;
+    }
+    .thumb {
+    width: 160px;
+    height: 160px;
+    }
+    .list-testo {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .portrait {
+        display:none;
     }
     .landscape {
         display: inline-block;
@@ -981,10 +991,26 @@ a.ui-btn.ui-btn-icon-right.ui-icon-carat-r {
         width: 40%;
         height: 500px;
     }
+    .immacontenuto { 
+        width: 60%;
+        height:500px;
+        float: left;
+    }
     .ui-content-p {
         clear:both;
     }
     .ui-content-l {
         padding: 1em 2em 0 2em;
+    }
+    .list-title {
+        margin-top: 4%;
+        font-size: 1.4em;
+    }
+    .thumb {
+    width: 160px;
+    height: 160px;
+    }
+    .list-testo {
+        font-size: 1em;
     }
 }

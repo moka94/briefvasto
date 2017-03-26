@@ -16,10 +16,11 @@ $("#monumenti").on("pagecreate",function(){
                   
                   $(".monumenti").click(function(){
                       var id = $(this).attr('data-id');
-                              
+                                $("#immagineContenuto").attr("src", "js/images/rolling.gif");
                               $.ajax("https://vasto-58389.firebaseio.com/Monumenti.json")
                                       .done(function(data){
                                           $.map(data,function(riga,indice){
+                                              
                                               if(indice == id){
                                                   $("#nomeContenuto").html(riga.nome);
                                                   $("#viaContenuto").html(riga.via);
@@ -58,7 +59,7 @@ $("#monumenti").on("pagecreate",function(){
           
           $(".chiese").click(function(){
                       var id = $(this).attr('data-id');
-                              
+                              $("#immagineContenuto").attr("src", "js/images/rolling.gif");
                               $.ajax("https://vasto-58389.firebaseio.com/Chiese.json")
                                       .done(function(data){
                                           $.map(data,function(riga,indice){
@@ -99,7 +100,7 @@ $("#monumenti").on("pagecreate",function(){
 
              $(".musei").click(function(){
                          var id = $(this).attr('data-id');
-
+                                $("#immagineContenuto").attr("src", "js/images/rolling.gif");
                                  $.ajax("https://vasto-58389.firebaseio.com/Musei.json")
                                          .done(function(data){
                                              $.map(data,function(riga,indice){
@@ -140,7 +141,7 @@ $("#monumenti").on("pagecreate",function(){
 
                  $(".spiagge").click(function(){
                              var id = $(this).attr('data-id');
-
+                                    $("#immagineContenuto").attr("src", "js/images/rolling.gif");
                                      $.ajax("https://vasto-58389.firebaseio.com/Spiagge.json")
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
@@ -181,7 +182,7 @@ $("#monumenti").on("pagecreate",function(){
 
                  $(".svago").click(function(){
                              var id = $(this).attr('data-id');
-
+                                    $("#immagineContenuto").attr("src", "js/images/rolling.gif");
                                      $.ajax("https://vasto-58389.firebaseio.com/Svago.json")
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
@@ -222,7 +223,7 @@ $("#monumenti").on("pagecreate",function(){
 
                  $(".ristoranti").click(function(){
                              var id = $(this).attr('data-id');
-
+                                    $("#immagineContenuto3").attr("src", "js/images/rolling.gif");
                                      $.ajax("https://vasto-58389.firebaseio.com/Ristoranti.json")
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
@@ -263,7 +264,7 @@ $("#monumenti").on("pagecreate",function(){
 
                  $(".hotel").click(function(){
                              var id = $(this).attr('data-id');
-
+                                    $("#immagineContenuto4").attr("src", "js/images/rolling.gif");
                                      $.ajax("https://vasto-58389.firebaseio.com/Hotel.json")
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
@@ -304,7 +305,7 @@ $("#monumenti").on("pagecreate",function(){
 
                  $(".itinerari").click(function(){
                              var id = $(this).attr('data-id');
-
+                                    $("#mappaContenuto2").attr("src", "js/images/rolling.gif");
                                      $.ajax("https://vasto-58389.firebaseio.com/Itinerari.json")
                                              .done(function(data){
                                                  $.map(data,function(riga,indice){
